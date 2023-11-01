@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - DailyGrocyy</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> DailyGrocyy </a>
+    </header>
+
+    <div class="checkout-container">
+        <h1 class="heading">Checkout</h1>
+        <!-- Add checkout form and options here -->
+        <form id="checkoutForm">
+            <div class="checkout-details">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="payment-options">
+                <label for="card">Select a payment method:</label>
+                <select id="card" name="card">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </div>
+            <a href="checkout.html">
+                <button type="button" id="payBtn">Checkout</button>
+             </a>
+        </form>
+    </div>
+
+    <script src="grocyy.js"></script>
+</body>
+
+</html>

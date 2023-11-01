@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - DailyGrocyy</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> DailyGrocyy </a>
+    </header>
+
+    <div class="payment-container">
+        <h1 class="heading">Payment</h1>
+        <!-- Add payment form and options here -->
+        <form id="paymentForm" onsubmit="confirmOrder(); return false;">
+            <div class="card-details">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+            </div>
+                <button type="submit" id="confirmBtn" onclick="confirmOrder()">Confirm Order</button>
+    
+        </form>
+    </div>
+
+    <script>
+
+    function confirmOrder() {
+       
+        alert("Order confirmed! Thank you for shopping with DailyGrocyy.");
+    
+    }
+</script>
+</body>
+
+</html>
